@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #hero {
   background-image: url(../assets/img/img-1.jpg);
   background-repeat: no-repeat;
@@ -87,7 +92,9 @@ a.dropdown-item:hover {
 #countdown {
   color: #fff;
   font-size: xx-large;
-  border: 2px ridge rgb(177, 19, 19);
+  border: 10px solid transparent;
+  -o-border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
+     border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
   margin-bottom: 10%;
   background-color: #1A1B1D;
   background-image: url(https://media1.giphy.com/media/WE066ErCk0Z91fLgaJ/giphy.gif?cid=790b7611w7wqf1y6ujp852cseivsofr2ma2r3gyqemta8sux&rid=giphy.gif&ct=s);
@@ -110,8 +117,10 @@ a.dropdown-item:hover {
 }
 
 #row2 {
-  background-color: #252525;
-  border-radius: 5%;
+  border: 10px solid transparent;
+  -o-border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
+     border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
+  border-image-outset: 4px 40px;
   margin-top: 10%;
   padding-top: 10px;
   color: #fff;
@@ -128,7 +137,6 @@ a.dropdown-item:hover {
 }
 
 #swords {
-  background-color: #252525;
   background-image: url(https://media4.giphy.com/media/SwUwZMPpgwHNQGIjI7/giphy.gif?cid=790b76113t59fuvnytjoezra7dug1y8t9xmjdxemrgdwx835&rid=giphy.gif&ct=s);
   background-repeat: no-repeat;
   background-size: contain;
@@ -144,7 +152,6 @@ a.dropdown-item:hover {
 }
 
 #allies {
-  background-color: #252525;
   background-image: url(https://media3.giphy.com/media/ygeXmzGhwkA0fePkEP/giphy.gif?cid=790b7611xc4z7bsjsaoftibfluj7anty8nxlsl2wluvwcjg8&rid=giphy.gif&ct=s);
   background-repeat: no-repeat;
   background-size: contain;
@@ -156,7 +163,9 @@ a.dropdown-item:hover {
   font-weight: bold;
   color: #fff;
   margin-top: 20%;
-  border: 1px #fff solid;
+  border: 10px solid transparent;
+  -o-border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
+     border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
   padding: 4px 0;
   background-color: #1A1B1D;
   background-image: url(https://media1.giphy.com/media/l4vy2jLM0M4eQvAT3d/giphy.gif?cid=790b761135aa22d1354664ff7bd5ebd76379a665e1f84e0f&rid=giphy.gif&ct=s);
@@ -167,7 +176,9 @@ a.dropdown-item:hover {
 
 #carouselExampleFade {
   margin-top: 0px;
-  border: 1px #fff solid;
+  border: 10px solid transparent;
+  -o-border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
+     border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
 }
 
 .carousel-item {
