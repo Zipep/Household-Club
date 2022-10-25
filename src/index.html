@@ -22,7 +22,7 @@
     <script src="js/javascript.js"></script>
     <title>GdR Club</title>
 </head>
-<body onload="myMusic()">
+<body>
     <div id="hero">
         <nav class="navbar navbar-expand-lg navbar-dark col-12 col-md-12" id="navbar" >
             <div class="container">
@@ -168,22 +168,37 @@
   
       <!-- Right -->
       <div>
-        <a href="#" class="me-4 link-secondary">
+        <a href="#" class="me-4 text-primary">
           <i class="fab fa-facebook-f fa-2x"></i>
         </a>      
-        <a href="#" class="me-4 link-secondary">
+        <a href="#" class="me-4 text-primary">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="#" class="me-4 link-secondary">
+        <a href="#" class="me-4 text-primary">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a href="https://github.com/Zipep" class="me-4 link-secondary">
+        <a href="https://github.com/Zipep" class="me-4 text-primary">
           <i class="fab fa-github fa-2x"></i>
         </a>
-        <div><audio controls autoplay id="music">          
-          <source src="assets/sound/Skyrim Dragonborn Theme x Dragon Age Inquisition.mp3" type="audio/mpeg">
+        <div><audio preload="auto" autoplay id="music">          
+          <source src="assets/sound/Skyrim Dragonborn Theme x Dragon Age Inquisition.mp3" type="audio/mp3">
         Your browser does not support the audio element.
         </audio></div>
+        <div id="music_player">
+          <button type="button" class="btn btn-primary" onclick="document.getElementById('music').play()">
+            <img src="assets/svg/play-solid.svg" alt="play" id="play">
+          </button>
+          <button type="button" class="btn btn-primary" onclick="document.getElementById('music').pause()">
+            <img src="assets/svg/pause-solid.svg" alt="pause" id="pause">
+          </button>
+          <button type="button" class="btn btn-primary" onclick="document.getElementById('music').volume -= 0.1">
+            <img src="assets/svg/volume-low-solid.svg" alt="volume-down" id="volume-down">
+          </button>
+          <button type="button" class="btn btn-primary" onclick="document.getElementById('music').volume += 0.1">
+            <img src="assets/svg/volume-high-solid.svg" alt="volume-up" id="volume-up">
+          </button>          
+        </div>
+
       </div>
       <!-- Right -->
     </section>

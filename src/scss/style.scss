@@ -143,8 +143,10 @@ $dropdown-border-color: transparent;
 }
 
 #img_row2{
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    // width: 100%;
+    // height: auto;
     border: 2px solid $red;
     border-radius: 50%;
 }
@@ -158,8 +160,10 @@ $dropdown-border-color: transparent;
 }
 
 #img2_row2{
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    // width: 100%;
+    // height: auto;
     border: 2px solid $red;
     border-radius: 50%;    
 }
@@ -207,6 +211,46 @@ $dropdown-border-color: transparent;
     height: auto;
 }
 // Footer ---
+#music_player button{
+    background-color: $bg-color;
+    border: none;
+}
+#music_player img{
+    width: 20px;
+    height: 20px;
+}
+#music_player{
+    border: 2px solid transparent;
+    border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 10 round;
+}
+#play{
+    filter: invert(97%) sepia(96%) saturate(946%) hue-rotate(313deg) brightness(108%) contrast(96%);
+}
+// Hover effect on button
+#play:hover{
+    filter: invert(13%) sepia(53%) saturate(4922%) hue-rotate(351deg) brightness(110%) contrast(100%);
+}
+#pause{
+    filter: invert(97%) sepia(96%) saturate(946%) hue-rotate(313deg) brightness(108%) contrast(96%);
+}
+// Hover effect on button
+#pause:hover{
+    filter: invert(13%) sepia(53%) saturate(4922%) hue-rotate(351deg) brightness(110%) contrast(100%);
+}
+#volume-down{
+    filter: invert(97%) sepia(96%) saturate(946%) hue-rotate(313deg) brightness(108%) contrast(96%);
+}
+// Hover effect on button
+#volume-down:hover{
+    filter: invert(13%) sepia(53%) saturate(4922%) hue-rotate(351deg) brightness(110%) contrast(100%);
+}
+#volume-up{
+    filter: invert(97%) sepia(96%) saturate(946%) hue-rotate(313deg) brightness(108%) contrast(96%);
+}
+// Hover effect on button
+#volume-up:hover{
+    filter: invert(13%) sepia(53%) saturate(4922%) hue-rotate(351deg) brightness(110%) contrast(100%);
+}
 footer{
     font-family: 'Cinzel', serif;
     margin-top: 30%;

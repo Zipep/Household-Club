@@ -27,7 +27,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 // Music play function
-function myMusic(){
-  let music = document.getElementById('music');
-  music.onplay();
-}
+// window.addEventListener('load', function(){
+
+// })
