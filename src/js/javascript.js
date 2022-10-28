@@ -27,6 +27,16 @@ var x = setInterval(function() {
   }
 }, 1000);
 // Music play function
-// window.addEventListener('load', function(){
 
-// })
+const soundEffect = new Audio();
+soundEffect.autoplay = true;
+// onClick of first interaction on page before I need the sounds
+window.addEventListener("touchstart", soundFunction);
+function soundFunction(){
+  soundEffect.play;
+}
+
+// (This is a tiny MP3 file that is silent and extremely short - retrieved from https://bigsoundbank.com and then modified)
+soundEffect.src = 'assets/sound/test-1-preSound.mp3';
+// later on when you actually want to play a sound at any point without user interaction
+soundEffect.src ='assets/sound/Skyrim Dragonborn Theme x Dragon Age Inquisition.mp3';
