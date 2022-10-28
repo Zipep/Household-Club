@@ -1,6 +1,10 @@
 // Variable Overrides 
 $bg-color: #1A1B1D;
 $my-bg: #252525;
+@mixin mytext {
+    color: #fff;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;    
+}
 $red: rgb(177, 19, 19);
 $theme-colors: (
     "primary": $red
@@ -36,19 +40,21 @@ html, body{
 }
 @media only screen and (min-width: 1600px) {
     #hero{
-        background-position: top center;
+        // background-position: top center;
+        background-position: 50% 15%;
     }
 }
 
 #title{
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, -15px -11px 10px rgba(255,74,48,0.8);
     color: #751313;
-    // text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;
+    font-size: 24px;
 }
 .navbar{
     background: none !important;
 }
 .nav-link{
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, -15px -11px 10px rgba(255,74,48,0.8);    
@@ -108,7 +114,6 @@ $dropdown-border-color: transparent;
     // border: 2px ridge $red;
     border: 10px solid transparent;
     border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
-    margin-bottom: 10%;
     background-color: $bg-color;
     background-image: url(https://media1.giphy.com/media/WE066ErCk0Z91fLgaJ/giphy.gif?cid=790b7611w7wqf1y6ujp852cseivsofr2ma2r3gyqemta8sux&rid=giphy.gif&ct=s);
     background-repeat: no-repeat;
@@ -122,20 +127,32 @@ $dropdown-border-color: transparent;
     background-size: cover;
     background-position: center center;
     border-radius: 5%;
+    margin-top: 10%;
     padding: 10px 0;
     color: #fff;
     h6{
         font-weight: bold;
     }
 }
+// Rows margins resize for small viewport -------------<
+@media only screen and (max-width: 576px) {
+    #row1{
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    #row2{
+        margin-bottom: 30%;
+    }
+    #carouselExampleFade{
+        margin-bottom: 20%;
+    }
+}
 // Second Row of contents ---
 #row2{
     border: 10px solid transparent;
     border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
-    // border-image-outset: 2;
     border-image-outset: 4px 40px;    
     margin-top: 10%;
-    padding-top: 10px;
     color: #fff;
     h5{
         font-weight: bold;
@@ -143,10 +160,10 @@ $dropdown-border-color: transparent;
 }
 
 #img_row2{
-    width: 150px;
-    height: 150px;
-    // width: 100%;
-    // height: auto;
+    // width: 200px;
+    // height: 150px;
+    width: 100%;
+    height: auto;
     border: 2px solid $red;
     border-radius: 50%;
 }
@@ -160,10 +177,10 @@ $dropdown-border-color: transparent;
 }
 
 #img2_row2{
-    width: 150px;
-    height: 150px;
-    // width: 100%;
-    // height: auto;
+    // width: 200px;
+    // height: 150px;
+    width: 100%;
+    height: auto;
     border: 2px solid $red;
     border-radius: 50%;    
 }
@@ -173,7 +190,7 @@ $dropdown-border-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
     height: 150px;
-    width: 150px;    
+    width: 150px;   
 }
 
 #divider{
@@ -253,7 +270,7 @@ $dropdown-border-color: transparent;
 }
 footer{
     font-family: 'Cinzel', serif;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 footer section{
     border-bottom: 1px solid transparent;
