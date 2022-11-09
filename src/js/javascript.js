@@ -40,3 +40,14 @@ function soundFunction(){
 soundEffect.src = 'assets/sound/test-1-preSound.mp3';
 // later on when you actually want to play a sound at any point without user interaction
 soundEffect.src ='assets/sound/Skyrim Dragonborn Theme x Dragon Age Inquisition.mp3';
+
+// Figuring out how to make the sound automatically starts on mobile
+let vw = window.innerWidth;
+console.log('Current user viewport width');
+console.log(vw); 
+
+  $(document).ready(function(){
+    if(window.innerWidth <= 768){
+      $('#myModal').modal('show');
+    }
+  });

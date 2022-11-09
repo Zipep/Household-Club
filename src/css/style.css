@@ -4,6 +4,32 @@ html, body {
   overflow-x: hidden;
 }
 
+div.modal-header {
+  -o-border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+}
+
+div.modal-header > h5 {
+  justify-content: center;
+  color: #fff;
+}
+
+div.modal-header > button.close > span {
+  color: #fff;
+}
+
+div.modal-body {
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+}
+
+div.modal-footer {
+  justify-content: center;
+  -o-border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+}
+
 #hero {
   background-image: url(../assets/img/img-1.jpg);
   background-repeat: no-repeat;
@@ -4799,7 +4825,7 @@ button.close {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #1A1B1D;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -4819,7 +4845,7 @@ button.close {
   opacity: 0;
 }
 .modal-backdrop.show {
-  opacity: 0.5;
+  opacity: 0.92 !important;
 }
 
 .modal-header {
