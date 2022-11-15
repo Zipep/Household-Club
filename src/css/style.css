@@ -4,32 +4,6 @@ html, body {
   overflow-x: hidden;
 }
 
-div.modal-header {
-  -o-border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
-     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
-}
-
-div.modal-header > h5 {
-  justify-content: center;
-  color: #fff;
-}
-
-div.modal-header > button.close > span {
-  color: #fff;
-}
-
-div.modal-body {
-  text-align: center;
-  justify-content: center;
-  color: #fff;
-}
-
-div.modal-footer {
-  justify-content: center;
-  -o-border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
-     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
-}
-
 #hero {
   background-image: url(../assets/img/img-1.jpg);
   background-repeat: no-repeat;
@@ -164,6 +138,42 @@ a.dropdown-item:hover {
   }
   #carouselExampleFade {
     margin-bottom: 20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #row1 {
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+  #row2 {
+    margin-bottom: 30%;
+  }
+  #carouselExampleFade {
+    margin-bottom: 20%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #row1 {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  #row2 {
+    margin-bottom: 10%;
+  }
+  #carouselExampleFade {
+    margin-bottom: 10%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #row1 {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  #row2 {
+    margin-bottom: 10%;
+  }
+  #carouselExampleFade {
+    margin-bottom: 10%;
   }
 }
 #row2 {
@@ -4825,7 +4835,7 @@ button.close {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #1A1B1D;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -4845,7 +4855,7 @@ button.close {
   opacity: 0;
 }
 .modal-backdrop.show {
-  opacity: 0.92 !important;
+  opacity: 0.5;
 }
 
 .modal-header {
