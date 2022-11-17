@@ -121,7 +121,7 @@ a.dropdown-item:hover {
   background-position: center center;
   border-radius: 5%;
   margin-top: 10%;
-  padding: 10px 0;
+  padding: 70px 0;
   color: #fff;
 }
 #row1 h6 {
@@ -129,18 +129,24 @@ a.dropdown-item:hover {
 }
 
 @media only screen and (max-width: 576px) {
+  #countdown_wrapper {
+    margin-top: 10%;
+  }
   #row1 {
     margin-top: 50%;
-    margin-bottom: 50%;
   }
   #row2 {
+    margin-top: 20%;
     margin-bottom: 30%;
   }
   #carouselExampleFade {
-    margin-bottom: 20%;
+    margin-bottom: 25%;
   }
 }
 @media only screen and (max-width: 768px) {
+  #countdown_wrapper {
+    margin-top: 10%;
+  }
   #row1 {
     margin-top: 50%;
     margin-bottom: 50%;
@@ -153,6 +159,9 @@ a.dropdown-item:hover {
   }
 }
 @media only screen and (max-width: 992px) {
+  #countdown_wrapper {
+    margin-top: 10%;
+  }
   #row1 {
     margin-top: 20%;
     margin-bottom: 20%;
@@ -171,6 +180,18 @@ a.dropdown-item:hover {
   }
   #row2 {
     margin-bottom: 10%;
+  }
+  #carouselExampleFade {
+    margin-bottom: 10%;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  #row1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  #row2 {
+    margin-bottom: 5%;
   }
   #carouselExampleFade {
     margin-bottom: 10%;

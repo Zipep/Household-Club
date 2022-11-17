@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 19, 2022 00:00:01").getTime();
+var countDownDate = new Date("Nov 26, 2022 00:00:01").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -45,3 +45,77 @@ soundEffect.src ='assets/sound/Skyrim Dragonborn Theme x Dragon Age Inquisition.
 let vw = window.innerWidth;
 console.log('Current user viewport width');
 console.log(vw);
+
+// My easter egg ------ >
+const myEasterEgg = new Audio();
+myEasterEgg.src = 'assets/sound/fuocooo.wav';
+document.getElementById('myCopyrightEasteregg').addEventListener("click", eastereggFunction);
+  function eastereggFunction(){
+    myEasterEgg.play();
+}
+
+// Test animations ------------>
+
+gsap.fromTo('#hero', {
+    opacity: 0,
+    y: -20
+  },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: 'power1.out',
+    delay: 0.5
+  }
+  );  
+
+
+gsap.fromTo(
+  ['#countdown_text'], {
+    y: -70,
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 2,
+    ease: 'none',
+    delay: 1
+  }
+);
+
+gsap.fromTo(
+  ['#countdown'], {
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    duration: 3,
+    ease: 'none',
+    delay: 3
+  }
+);
+
+gsap.fromTo(
+  ['#row1'], {
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    duration: 1,
+    ease: 'none',
+    delay: 3.7
+  }
+);
+
+gsap.fromTo(
+  ['#row2'], {
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    duration: 1,
+    ease: 'none',
+    delay: 4
+  }
+);
