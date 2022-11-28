@@ -280,6 +280,33 @@ a.dropdown-item:hover {
   height: auto;
 }
 
+.carta {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background-color: #1a1b1d;
+  border: 0.1px solid transparent;
+  -o-border-image: url(../assets/background_assets/cornice_pg_oro.jpg);
+     border-image: url(../assets/background_assets/cornice_pg_oro.jpg);
+  border-image-width: 30px;
+  border-image-slice: 85;
+  border-image-outset: 0px 0px 10px 10px;
+  border-image-repeat: stretch;
+}
+
+#cardRow1 {
+  margin-top: 15%;
+}
+
+.carta-corpo {
+  padding: 0px 5px 22px 10px;
+}
+
+.race {
+  font-weight: bold;
+}
+
 #music_player button {
   background-color: #1A1B1D;
   border: none;
