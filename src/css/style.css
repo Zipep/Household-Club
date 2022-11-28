@@ -311,6 +311,51 @@ a.dropdown-item:hover {
   font-weight: bold;
 }
 
+#accordion_container {
+  margin-top: 20%;
+  border: 0.1px solid transparent;
+  border-bottom: none;
+  border-image-source: url(../assets/background_assets/border-1.jpg);
+  border-image-slice: 30;
+  border-image-width: auto;
+  border-image-outset: 1;
+  border-image-repeat: stretch;
+}
+
+#myAccordion {
+  border: none;
+  padding: 30px 0px 16px 0px;
+}
+
+.accordion .card {
+  border-left: none;
+  border-right: none;
+  -o-border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+  border-image-width: 1px;
+}
+
+.accordion .card .card-header {
+  background-color: #252525;
+  border: none;
+}
+
+.accordion .card .card-body {
+  color: black;
+  font-weight: 500;
+  background-color: #1A1B1D;
+  background-image: url(../assets/background_assets/paper-scroll2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: none;
+}
+
+div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link {
+  color: #fff;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;
+}
+
 #music_player button {
   background-color: #1A1B1D;
   border: none;
