@@ -25,7 +25,7 @@
     <title>GdR Club</title>
 </head>
 <body>
-    <div id="hero">
+    <div id="hero"> <!-- Start Hero content -->
         <nav class="navbar navbar-expand-lg navbar-dark col-12 col-md-12" id="navbar" >
             <div class="container">
             <a class="navbar-brand text-primary font-weight-bold" href="#" id="title">HOUSEHOLD CLUB</a>
@@ -54,6 +54,9 @@
                             <a class="dropdown-item" href="#members"><i class="fa-solid fa-users"></i> Members</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link text-primary font-weight-bold" id="loginButton"><span class="fa fa-sign-in fa-1x"></span> Login</a>
+                    </li>
                 </ul>
             </div>
             </div>
@@ -65,7 +68,44 @@
             <p class="lead">Are you ready to start a new GdR season ?</p>
           </div>
         </div>
+      </div><!-- End Hero content -->
+
+     <!-- Start Login Modal -->
+
+     <div id="loginModal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="content" aria-hidden="true">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                  <input type="email" id="exampleInputEmail3" class="form-control-sm mr-1" placeholder="Enter email">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                  <input type="password" id="exampleInputPassword3" class="form-control form-control-sm mr-1" placeholder="Password">
+                </div>
+                <div class="col-sm-auto">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button class="btn btn-secondary btn-sm ml-auto" type="button" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary btn-sm ml-1" type="submit">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+    </div>
 
     <div class="container" id="countdown_wrapper">
         <div class="row text-center">
@@ -252,7 +292,7 @@
     <div class="text-center p-4">
       © 2022 Copyright:
       <a class="text-reset fw-bold text-primary" href="#" id="myCopyrightEasteregg"> Giuseppe A. Savino</a><br>
-      <p>Credits to: <a class="text-reset fw-bold" href="https://www.freepik.com/author/studio4rt">studio4rt</a></p>
+      <p>Credits to: <a class="text-reset fw-bold" href="https://www.freepik.com/author/studio4rt">studio4rt;</a><a class="text-reset fw-bold" href="https://www.deviantart.com/silkynoire"> silkynoire</a></p>
     </div>
     <!-- Copyright -->
   </footer>

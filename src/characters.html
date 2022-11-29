@@ -47,12 +47,16 @@
                         <a class="nav-link text-primary font-weight-bold" href="#">Merch</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-primary font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <a class="nav-link dropdown-toggle text-primary font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Contact</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="mailto:giuseppeasav@outlook.it"><i class="fa-solid fa-envelope-open"></i> Email</a>
                             <a class="dropdown-item" href="https://github.com/Zipep"><i class="fa-brands fa-github-alt"></i> Github</a>
                             <a class="dropdown-item" href="#members"><i class="fa-solid fa-users"></i> Members</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link text-primary font-weight-bold" id="loginButton"><span class="fa fa-sign-in fa-1x"></span> Login</a>
                     </li>
                 </ul>
             </div>
@@ -66,6 +70,44 @@
             </div>
         </div>
     </div> <!-- End hero content -->
+
+    <!-- Start Login Modal -->
+
+    <div id="loginModal" class="modal fade" role="dialog" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="content" aria-hidden="true">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                  <input type="email" id="exampleInputEmail3" class="form-control-sm mr-1" placeholder="Enter email">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputPassword3">Password</label>
+                  <input type="password" id="exampleInputPassword3" class="form-control form-control-sm mr-1" placeholder="Password">
+                </div>
+                <div class="col-sm-auto">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button class="btn btn-secondary btn-sm ml-auto" type="button" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary btn-sm ml-1" type="submit">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container"> <!-- Start container -->
       <div class="row justify-content-around" id="cardRow1">
         <div class="col-12 col-md-4">
@@ -344,7 +386,7 @@
     <div class="text-center p-4">
       © 2022 Copyright:
       <a class="text-reset fw-bold text-primary" href="#"> Giuseppe A. Savino</a><br>
-      <p>Credits to: <a class="text-reset fw-bold" href="https://www.freepik.com/author/studio4rt">studio4rt</a></p>
+      <p>Credits to: <a class="text-reset fw-bold" href="https://www.freepik.com/author/studio4rt">studio4rt;</a><a class="text-reset fw-bold" href="https://www.deviantart.com/silkynoire"> silkynoire</a></p>
     </div>
     <!-- Copyright -->
   </footer>

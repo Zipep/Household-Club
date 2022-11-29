@@ -1,3 +1,10 @@
+// Initialize Login Modal -------------->
+$(document).ready(function(){
+  $('#loginButton').click(function(){
+    $('#loginModal').modal('toggle');
+  });
+});
+
 // Set the date we're counting down to
 var countDownDate = new Date("Nov 26, 2022 00:00:01").getTime();
 
