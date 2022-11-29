@@ -98,7 +98,23 @@ $dropdown-border-color: transparent;
         color: #1A1B1D;
     }
 }
-// Jumbotron and text ---
+// Modal Login -------------->
+$modal-content-bg: $bg-color;
+div.modal-content{
+    border: 2px solid transparent;
+    border-image: url(../assets/background_assets/frame-2.png) 100 stretch;
+    border-image-width: 20px;
+}
+div.modal-header{
+    border: none;
+}
+.modal{
+    color: #FFF;
+    .close{
+        color: #fff;
+    }
+}
+// Jumbotron and text ------------>
 .jumbotron{
     background: none !important;
 }
