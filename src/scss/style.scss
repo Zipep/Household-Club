@@ -72,7 +72,7 @@ html, body{
 // Navbar button edit ---
 $navbar-dark-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(177,19,19)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 $navbar-dark-toggler-border-color: $red;
-$navbar-dark-hover-color: #1A1B1D;
+$navbar-dark-hover-color: black;
 // Navbar dropdown menu edit ---
 div.dropdown-menu.show{
     background: none;
@@ -96,6 +96,12 @@ $dropdown-border-color: transparent;
     a.dropdown-item:hover{
         background-color: transparent;
         color: #1A1B1D;
+    }
+    .navbar-collapse{
+        background-color: rgb(37, 37, 37, 0.6);        
+    }
+    div.dropdown-menu.show{
+        background-color: rgb(37, 37, 37, 0.7); 
     }
 }
 // Modal Login -------------->
