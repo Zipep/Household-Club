@@ -247,21 +247,17 @@ div.modal-header{
 #row2{
     border: 10px solid transparent;
     border-image: url(../assets/background_assets/frame_vintage_curtain_red_c_05.png) 100 stretch;
-    border-image-outset: 4px 40px;    
+    border-image-outset: 1px 1px;
+    //border-image-outset: 4px 40px;    
     margin-top: 10%;
     color: #fff;
+    background-image: url(../assets/img/img-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     h5{
         font-weight: bold;
     }    
-}
-
-#img_row2{
-    // width: 200px;
-    // height: 150px;
-    width: 100%;
-    height: auto;
-    border: 2px solid $red;
-    border-radius: 50%;
 }
 
 #swords{
@@ -270,15 +266,6 @@ div.modal-header{
     background-size: contain;
     height: 150px;
     width: 150px;
-}
-
-#img2_row2{
-    // width: 200px;
-    // height: 150px;
-    width: 100%;
-    height: auto;
-    border: 2px solid $red;
-    border-radius: 50%;    
 }
 
 #allies{
