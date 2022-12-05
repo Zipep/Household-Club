@@ -399,10 +399,16 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     border: 26px solid transparent;
     border-image: url(../assets/background_assets/frame_curtain-2.jpg) 65 stretch;
     border-image-outset: 0;
+    background-image: url(../assets/background_assets/paper-scroll1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 #advice{
-    color: #fff;
-    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;
+    // @include mytext();
+    color: black;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;    
+
 }
 @media only screen and (max-width: 991px) {
     div#hero_Page_3 nav#nav_Page_3.navbar.navbar-expand-lg.navbar-dark.col-12.col-md-12 div.container div#navbarSupportedContent.navbar-collapse.collapse{
@@ -413,8 +419,57 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     }
 }
 
-#main-map{
-    margin-top: 10%;
+#papers{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    border-bottom: 4px solid transparent;
+    border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+    @include mytext();
+}
+@media only screen and (max-width: 576px) {
+    #imagebox img{
+        height: auto;
+        width: 250px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid transparent;
+        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+    }
+
+}
+@media only screen and (max-width: 768px){
+    #imagebox img{
+        height: auto;
+        width: 250px;
+        border-bottom: 1px solid transparent;
+        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+    }    
+}
+
+@media only screen and (max-width: 992px){
+    #imagebox img{
+        height: auto;
+        width: 300px;
+        border-bottom: 1px solid transparent;
+        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #imagebox img{
+        height: auto;
+        width: 400px;
+        border-bottom: 1px solid transparent;
+        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+    }    
+}
+
+@media only screen and (min-width: 1201px){
+    #imagebox img{
+        height: auto;
+        width: 600px;
+        border-bottom: 1px solid transparent;
+        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+    }    
 }
 
 //<------------------------- ADVENTURES.HTML .SCSS FILE ------------------------------------------------------------->
