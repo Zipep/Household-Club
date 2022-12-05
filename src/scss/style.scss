@@ -421,17 +421,26 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
 
 #papers{
     margin-top: 15%;
-    margin-bottom: 5%;
-    border-bottom: 4px solid transparent;
+    margin-bottom: 0.1px;
+    border-bottom: 2px solid transparent;
     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     @include mytext();
+}
+#imagebox{
+    padding-top: 34px;
+    border-bottom: 4px solid transparent;
+    border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+    background-image: url(../assets/background_assets/wooden-texture-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 @media only screen and (max-width: 576px) {
     #imagebox img{
         height: auto;
         width: 250px;
         margin-bottom: 10px;
-        border-bottom: 1px solid transparent;
+        border: 1px solid transparent;
         border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     }
 
@@ -440,7 +449,7 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 250px;
-        border-bottom: 1px solid transparent;
+        border: 1px solid transparent;
         border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     }    
 }
@@ -449,7 +458,7 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 300px;
-        border-bottom: 1px solid transparent;
+        border: 1px solid transparent;
         border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     }
 }
@@ -458,7 +467,7 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 400px;
-        border-bottom: 1px solid transparent;
+        border: 1px solid transparent;
         border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     }    
 }
@@ -467,7 +476,7 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 600px;
-        border-bottom: 1px solid transparent;
+        border: 1px solid transparent;
         border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     }    
 }
