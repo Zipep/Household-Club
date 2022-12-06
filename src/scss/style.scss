@@ -422,12 +422,22 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
 #papers{
     margin-top: 15%;
     margin-bottom: 0.1px;
-    border-bottom: 2px solid transparent;
-    border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     @include mytext();
+}
+#papers{
+    h3{
+    display: inline-block;
+    }
+    p{
+        display: inline-block;
+        font-weight: lighter;
+        font-size: 8px;
+        font-style: italic;
+    }
 }
 #imagebox{
     padding-top: 34px;
+    border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
     background-image: url(../assets/background_assets/wooden-texture-1.jpg);
@@ -436,12 +446,19 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     background-position: center center;
 }
 @media only screen and (max-width: 576px) {
-    #imagebox img{
+    #imagebox img.img-fluid{
         height: auto;
         width: 250px;
         margin-bottom: 10px;
-        border: 1px solid transparent;
-        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+        border: 0.1px solid transparent;
+        border-image: url(../assets/background_assets/border-3.png);
+        border-image-width: 10px;
+        border-image-slice: 70;
+        border-image-outset: 1px;
+        border-image-repeat: round;
+    }
+    #img_lastchild{
+        margin-top: 20.7px;
     }
 
 }
@@ -449,8 +466,12 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 250px;
-        border: 1px solid transparent;
-        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+        border: 0.1px solid transparent;
+        border-image: url(../assets/background_assets/border-3.png);
+        border-image-width: 10px;
+        border-image-slice: 70;
+        border-image-outset: 1px;
+        border-image-repeat: round;
     }    
 }
 
@@ -458,8 +479,12 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 300px;
-        border: 1px solid transparent;
-        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+        border: 0.1px solid transparent;
+        border-image: url(../assets/background_assets/border-3.png);
+        border-image-width: 10px;
+        border-image-slice: 70;
+        border-image-outset: 1px;
+        border-image-repeat: round;
     }
 }
 
@@ -467,8 +492,12 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 400px;
-        border: 1px solid transparent;
-        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+        border: 0.1px solid transparent;
+        border-image: url(../assets/background_assets/border-3.png);
+        border-image-width: 10px;
+        border-image-slice: 70;
+        border-image-outset: 1px;
+        border-image-repeat: round;
     }    
 }
 
@@ -476,8 +505,12 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     #imagebox img{
         height: auto;
         width: 600px;
-        border: 1px solid transparent;
-        border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+        border: 0.1px solid transparent;
+        border-image: url(../assets/background_assets/border-3.png);
+        border-image-width: 10px;
+        border-image-slice: 70;
+        border-image-outset: 1px;
+        border-image-repeat: round;
     }    
 }
 
