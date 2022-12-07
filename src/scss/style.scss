@@ -331,6 +331,14 @@ div.modal-header{
 #cardRow2{
     margin-top: 15%;
 }
+@media only screen and (max-width: 768px){
+    .carta{
+        margin-bottom: 50px;
+    }
+    #cardRow1{
+        margin-top: 20%;
+    }
+}
 .carta-corpo{
     padding: 0px 5px 22px 10px;
 }
@@ -405,7 +413,6 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     background-position: center center;
 }
 #advice{
-    // @include mytext();
     color: black;
     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;    
 
@@ -514,6 +521,56 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     }    
 }
 
+#stories_header{
+    margin-top: 15%;
+    margin-bottom: 0.1px;
+    @include mytext();
+}
+#stories{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../assets/background_assets/wooden-texture-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+}
+#list-tab{
+    border: 0.1px solid transparent;
+    border-image: url(../assets/background_assets/frame-2.png);
+    border-image-width: 10px;
+    border-image-slice: 80;
+    border-image-outset: 2;
+    border-image-repeat: stretch;
+}
+
+$list-group-bg: $my-bg;
+$list-group-action-color: #fff;
+$list-group-hover-bg: $bg-color;
+$list-group-action-active-bg: "primary";
+$list-group-action-active-color: #fff;
+
+@media only screen and (max-width: 576px){
+    #list-container{
+        margin-bottom: 20px;
+    }    
+}
+
+#nav-tabContent{
+    color: black;
+    border: 0.1px solid transparent;
+    border-image: url(../assets/background_assets/frame-2.png);
+    border-image-width: 10px;
+    border-image-slice: 80;
+    border-image-outset: 2;
+    border-image-repeat: stretch;
+    background-image: url(../assets/background_assets/paper-scroll2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 //<------------------------- ADVENTURES.HTML .SCSS FILE ------------------------------------------------------------->
 
 // Footer --------->

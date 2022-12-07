@@ -317,6 +317,14 @@ div.modal-header {
   margin-top: 15%;
 }
 
+@media only screen and (max-width: 768px) {
+  .carta {
+    margin-bottom: 50px;
+  }
+  #cardRow1 {
+    margin-top: 20%;
+  }
+}
 .carta-corpo {
   padding: 0px 5px 22px 10px;
 }
@@ -510,6 +518,56 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link {
     border-image-repeat: round;
   }
 }
+#stories_header {
+  margin-top: 15%;
+  margin-bottom: 0.1px;
+  color: #fff;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;
+}
+
+#stories {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../assets/background_assets/wooden-texture-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  -o-border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+     border-image: url(../assets/background_assets/hr-edited.png) 100 stretch;
+}
+
+#list-tab {
+  border: 0.1px solid transparent;
+  -o-border-image: url(../assets/background_assets/frame-2.png);
+     border-image: url(../assets/background_assets/frame-2.png);
+  border-image-width: 10px;
+  border-image-slice: 80;
+  border-image-outset: 2;
+  border-image-repeat: stretch;
+}
+
+@media only screen and (max-width: 576px) {
+  #list-container {
+    margin-bottom: 20px;
+  }
+}
+#nav-tabContent {
+  color: black;
+  border: 0.1px solid transparent;
+  -o-border-image: url(../assets/background_assets/frame-2.png);
+     border-image: url(../assets/background_assets/frame-2.png);
+  border-image-width: 10px;
+  border-image-slice: 80;
+  border-image-outset: 2;
+  border-image-repeat: stretch;
+  background-image: url(../assets/background_assets/paper-scroll2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 #music_player button {
   background-color: #1A1B1D;
   border: none;
@@ -4846,17 +4904,17 @@ tbody.collapse.show {
 
 .list-group-item-action {
   width: 100%;
-  color: #495057;
+  color: #fff;
   text-align: inherit;
 }
 .list-group-item-action:hover, .list-group-item-action:focus {
-  color: #495057;
+  color: #fff;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #1A1B1D;
 }
 .list-group-item-action:active {
-  color: #212529;
-  background-color: #e9ecef;
+  color: #fff;
+  background-color: "primary";
 }
 
 .list-group-item {
@@ -4864,7 +4922,7 @@ tbody.collapse.show {
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #fff;
+  background-color: #252525;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 .list-group-item:first-child {
@@ -4882,7 +4940,7 @@ tbody.collapse.show {
 }
 .list-group-item.disabled, .list-group-item:disabled {
   color: #6c757d;
-  background-color: #fff;
+  background-color: #252525;
 }
 .list-group-item.active {
   z-index: 2;
