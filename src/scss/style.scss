@@ -83,7 +83,8 @@ a.dropdown-item{
 }
 a.dropdown-item:hover{
     background-color: transparent;
-    color: #fff;
+    color: $bg-color;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;
 }
 $dropdown-border-color: transparent;
 
@@ -396,6 +397,11 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     border-bottom: 26px solid transparent;
     border-image: url(../assets/background_assets/frame_curtain-2.jpg) 65 stretch;
     border-image-outset: 0;
+    a.dropdown-item:hover{
+        background-color: transparent;
+        color: #fff;
+        text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 0px 4px 8px #1A1B1D;
+    }
 }
 
 #candles-hand{
@@ -452,7 +458,21 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
     background-size: cover;
     background-position: center center;
 }
+#stories_header{
+    margin-top: 15%;
+    margin-bottom: 0.1px;
+    @include mytext();
+}
 @media only screen and (max-width: 576px) {
+    #advice_container{
+        margin-top: 40%;
+    }
+    #papers{
+        margin-top: 40%;
+    }
+    #stories_header{
+        margin-top: 40%;
+    }
     #imagebox img.img-fluid{
         height: auto;
         width: 250px;
@@ -520,12 +540,6 @@ div#myAccordion.accordion div.card .card-header h5.mb-0 button.btn.btn-link{ // 
         border-image-repeat: round;
     }    
 }
-
-#stories_header{
-    margin-top: 15%;
-    margin-bottom: 0.1px;
-    @include mytext();
-}
 #stories{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -572,7 +586,6 @@ $list-group-action-active-color: #fff;
     background-position: center center;
 }
 //<------------------------- ADVENTURES.HTML .SCSS FILE ------------------------------------------------------------->
-
 // Footer --------->
 #music_player button{
     background-color: $bg-color;

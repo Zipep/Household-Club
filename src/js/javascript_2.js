@@ -12,18 +12,18 @@ $(document).ready(function(){
 });
 // Test animations ------------>
 
-// gsap.fromTo('#hero', {
-//   opacity: 0,
-//   y: -20
-// },
-// {
-//   opacity: 1,
-//   y: 0,
-//   duration: 1,
-//   ease: 'power1.out',
-//   delay: 0.5
-// }
-// );
+gsap.fromTo('#hero', {
+  opacity: 0,
+  y: -20
+},
+{
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: 'power1.out',
+  delay: 0.5
+}
+);
 
 //   if ($(window).width() < 767) {
 //     gsap.to(".carta", {
@@ -63,15 +63,15 @@ $(document).ready(function(){
   //   }
 
 
-  // gsap.fromTo('.carta', {
-  //   opacity: 0,
-  //   x: -150
-  // },
-  // {
-  //   x: 0,
-  //   duration: 2.5,
-  //   opacity: 1,
-  //   ease: 'elastic',
-  //   delay: 0.8,
-  //   stagger: 0.4
-  // });
+  gsap.fromTo('.carta', {
+    opacity: 0,
+    x: -150
+  },
+  {
+    x: 0,
+    duration: 2.5,
+    opacity: 1,
+    ease: 'elastic',
+    delay: 0.8,
+    stagger: 0.4
+  });

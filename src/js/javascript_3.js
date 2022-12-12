@@ -31,3 +31,66 @@ const maps = Array.from(document.getElementsByClassName('suonoImmagine'));
           greatPaper.play(), event;
         });
       });
+
+gsap.fromTo('#hero_Page_3', {
+  opacity: 0,
+  y: -20
+},
+{
+  opacity: 1,
+  y: 0,
+  duration: 1,
+  ease: 'power1.out',
+  delay: 0.5
+}
+);
+
+gsap.fromTo(
+  ['#advice_container'], {
+    y: -70,
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 2,
+    ease: 'none',
+    delay: 1
+  }
+);
+
+gsap.fromTo(
+  ['#papers'], {
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    duration: 1.7,
+    ease: 'none',
+    delay: 3
+  }
+);
+
+gsap.fromTo(
+  ['#imagebox'], {
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    duration: 1,
+    ease: 'none',
+    delay: 3.7
+  }
+);
+
+gsap.fromTo(
+  ['#stories_header', '#stories'], {
+    opacity: 0
+  },
+  {
+    opacity: 1,
+    duration: 1,
+    ease: 'none',
+    delay: 4.2
+  }
+);
