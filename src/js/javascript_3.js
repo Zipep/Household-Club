@@ -39,7 +39,7 @@ gsap.fromTo('#hero_Page_3', {
 {
   opacity: 1,
   y: 0,
-  duration: 1,
+  duration: 1.2,
   ease: 'power1.out',
   delay: 0.5
 }
